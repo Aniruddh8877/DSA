@@ -2,8 +2,15 @@
 void traverse(int *, int);
 void main()
 {
-    int arr[5] = {2, 3, 4, 5, 6};
-    int N = 5;
+    int N;
+    printf("Enter the size of array:- ");
+    scanf("%d", &N);
+    int arr[N];
+    printf("Enter the array elements:- ");
+    for (int i = 0; i < N; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
     printf("press any key to perform array traversal and display its elements:\n\n");
     traverse(arr, N);
 }
